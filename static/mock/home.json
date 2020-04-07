@@ -1,0 +1,45 @@
+{
+    "ret": true,
+    "data": {
+        "swiperList": [
+            {
+                "imgUrl": "/static/img/swiper-banner01.a447807.png"
+            },
+            {
+                "imgUrl": "/static/img/swiper-banner02.ddffbc0.png"
+            },
+            {
+                "imgUrl": "/static/img/swiper-banner03.dd54a76.png"
+            },
+            {
+                "imgUrl": "/static/img/swiper-banner04.c5e67c7.png"
+            },
+            {
+                "imgUrl": "/static/img/swiper-banner05.1335554.png"
+            },
+            {
+                "imgUrl": "/static/img/swiper-banner06.7a3fdd1.png"
+            }
+        ],
+        "newestList": [
+            {
+                "title": "1.计算机行业周报（2019.12.2-2019.12.8）"
+            },
+            {
+                "title": "2.计算机行业周报（2019.12.2-2019.12.8）"
+            },
+            {
+                "title": "3.计算机行业周报（2019.12.2-2019.12.8）"
+            },
+            {
+                "title": "4.计算机行业周报（2019.12.2-2019.12.8）"
+            },
+            {
+                "title": "5.计算机行业周报（2019.12.2-2019.12.8）"
+            },
+            {
+                "title": "6.计算机行业周报（2019.12.2-2019.12.8）"
+            }
+        ]
+    }
+}
