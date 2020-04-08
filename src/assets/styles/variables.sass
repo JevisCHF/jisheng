@@ -1,0 +1,22 @@
+// 页面主题色
+$bgColor: #d90000
+$bgActive: #970000
+// 页面主题宽度设置
+.wrapper
+	width: 1360px
+	margin: 0 auto
+@media only screen and (max-width: 1360px) 
+	.wrapper
+		width: 100%
+// 实现页面动态改变样式 
+@mixin transition
+	transition: all .3s linear
+// 页面图片完美显示样式
+img 
+	display: block
+	border: 0
+	max-width: 100%
+// 页面字体样式
+h1, h2, h3, h4, h5, h6, button
+	font-family: "Microsoft Yahei"
+	
