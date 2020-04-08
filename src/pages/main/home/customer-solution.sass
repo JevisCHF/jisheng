@@ -1,0 +1,100 @@
+.customer-solution-wrapper
+    .customer-solution-bg
+        width: 100%
+    .solution-content
+        // 解决方案页面中间样式
+        .solution-middle
+            display: flex
+            padding: 50px 0 150px 0
+            // 左侧目录样式
+            .left-catalog
+                float: left
+                width: 25%
+                .catalog-lists
+                    border-left: 1px solid #00efe1
+                    .catalog-list
+                        cursor: pointer
+                        padding-left: 22px
+                        margin-bottom: 45px
+                        position: relative
+                        .list-title
+                            color: #1e1e1e
+                            font-size: 18px
+                            line-height: 20px
+                            text-shadow: 0 0 55px #f1f1f1
+                        &:after
+                            content: ''
+                            width: 21px
+                            height: 24px
+                            background: url("~images/main-home/customer-solution-catalog.png") center no-repeat
+                            box-shadow: 0 0 25px #f1f1f1
+                            position: absolute
+                            top: 0px
+                            left: -10px
+                    .catalog-list-active
+                        .list-title
+                            color: #d90000
+                            font-size: 22px
+                        &:after
+                            background: url("~images/main-home/customer-solution-catalog-active.png") center no-repeat 
+            // 右侧详情样式
+            .right-detail
+                float: right
+                width: 75%
+                .detail-title
+                    display: flex
+                    .title-text
+                        flex: 1
+                        color: #000
+                        font-size: 24px
+                        padding-left: 20px
+                    .title-button
+                        cursor: pointer
+                        float: right
+                        width: 120px
+                        height: 35px
+                        color: #fff
+                        font-size: 16px
+                        font-family: "Microsoft YaHei"
+                        text-align: center
+                        line-height: 35px
+                        background: url("~images/main-home/customer-solution-detail-button.png") center no-repeat
+                .detail-line
+                    width: 100%
+                    height: 2px
+                    background: linear-gradient(to right, #c70202, #ef5f00)
+                    margin-top: 5px
+                .detail-content
+                    padding: 20px 0 20px 20px
+                    p
+                        color: #333
+                        font-size: 15px
+                        line-height: 30px
+                        text-indent: 2em
+                .hide
+                    display: none
+        // 解决方案页面下部轮播样式
+        .solution-bottom
+            overflow: hidden
+            border: 1px solid #7ffff8
+            margin-bottom: 50px
+            .swiper-title
+                float: left
+                width: 22.43%
+                margin-right: 1.25%
+            .swiper-content
+                padding-top: 20px
+                overflow: hidden
+                .swiper-text
+                    width: 93%
+                    color: #333
+                    font-size: 18px
+                    text-align: center
+                    line-height: 25px
+                    padding-top: 10px
+    @media screen and (max-width: 1400px)
+        .solution-content
+            .left-catalog
+                margin-left: 20px
+            .right-detail
+                margin-right: 20px

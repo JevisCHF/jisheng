@@ -1,0 +1,81 @@
+.banner-wrapper
+        // background: url("~images/main-business/banner.jpg") no-repeat
+        z-index: 1
+        position: relative
+        overflow: hidden
+        .banner-img
+            width: 100%
+        // table 表格样式
+        .banner-table
+            z-index: 10
+            position: absolute
+            top: 3%
+            left: 1%
+            right: 2%
+            bottom: 5%
+            table
+                tr
+                    .table-text
+                        cursor: pointer
+                        width: 6.89%
+                        height: 50px
+                        text-align: center
+                        line-height: 18px
+                        &:hover
+                            background: #ccc   
+                        a
+                            color: #333
+                            font-size: 14px
+                            font-weight: bold
+        @media only screen and (max-width: 1900px)
+            .banner-table
+                table
+                    tr
+                        .table-text
+                            height: 50px
+                            a
+                                font-size: 13px
+        @media only screen and (max-width: 1800px)
+            .banner-table
+                top: 0
+                table
+                    tr
+                        .table-text
+                            height: 45px
+                            line-height: 14px
+                            a
+                                font-size: 12px
+        @media only screen and (max-width: 1600px)
+            .banner-table
+                top: -1%
+                table
+                    tr
+                        .table-text
+                            height: 40px
+                            line-height: 14px
+                            a
+                                font-size: 11px    
+        @media only screen and (max-width: 1460px)
+            .banner-table
+                top: 1%
+                left: 0
+                right: 0
+                table
+                    tr
+                        .table-text
+                            height: 35px
+                            line-height: 12px
+                            a
+                                font-size: 10px
+        @media only screen and (max-width: 1360px)
+            .banner-table
+                top: 5%
+                left: 0
+                right: 0
+                table
+                    tr
+                        .table-text
+                            height: 30px
+                            line-height: 10px
+                            a
+                                font-size: 9px

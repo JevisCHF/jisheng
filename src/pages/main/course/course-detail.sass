@@ -1,0 +1,229 @@
+// course-detail云课堂智慧树课程详情页面共用样式
+// 头部样式
+.header-wrapper
+    height: 300px
+    overflow: hidden
+    .header-text
+        color: #fff
+        position: relative
+        .location
+            font-size: 14px
+            line-height: 20px
+            padding: 20px 0
+        .course-titile
+            font-size: 36px
+            line-height: 48px
+        .course-price
+            font-size: 18px
+            line-height: 39.5px
+            margin-top: 60px
+            span
+                color: #d90000
+                font-size: 14px
+                &:nth-of-type(2)
+                    font-size: 36px
+        .course-information
+            font-size: 14px
+            line-height: 24px
+            margin-top: 20px
+            .information-list
+                margin-right: 5.15%
+                span
+                    font-weight: bold
+        .course-share
+            position: absolute
+            top: 20px
+            right: 0
+            .share-img
+                cursor: pointer
+                float: left
+                margin-left: 20px
+                width: 41px
+                height: 41px
+                @include transition
+                &:nth-of-type(1)
+                    width: 76px
+                    height: 40px
+                    background: url("~images/main-course/course-detail-share01.png") center no-repeat
+                    &:hover
+                        background: url("~images/main-course/course-detail-share01-active.png")
+                &:nth-of-type(2)
+                    width: 40px
+                    height: 40px
+                    background: url("~images/main-course/course-detail-share02.png") center no-repeat
+                    &:hover
+                        background: url("~images/main-course/course-detail-share02-active.png")
+                &:nth-of-type(3)
+                    background: url("~images/main-course/course-detail-share03.png") center no-repeat
+                    &:hover
+                        background: url("~images/main-course/course-detail-share03-active.png")
+                &:nth-of-type(4)
+                    background: url("~images/main-course/course-detail-share04.png") center no-repeat
+                    &:hover
+                        background: url("~images/main-course/course-detail-share04-active.png")
+        .course-buy
+            position: absolute
+            bottom: 20px
+            right: 0
+            img
+                cursor: pointer
+                @include transition
+                &:hover
+                    opacity: .8
+    @media only screen and (max-width: 1360px)
+        .header-text
+            margin: 0 10px
+            .course-share, .course-buy
+                right: 20px
+
+// 内容样式
+.content-wrapper
+    @media only screen and (max-width: 1360px)
+        .wrapper
+            margin: 0 10px
+    .content-header
+        height: 60px
+        box-shadow: 0 8px 8px #eee
+        .header-titles
+            color: #333
+            font-size: 20px
+            font-weight: bold
+            .header-title
+                cursor: pointer
+                float: left
+                height: 100%
+                line-height: 60px
+                margin-right: 50px
+                @include transition
+            .header-title-active
+                color: #d90000
+    .content-main
+        min-height: 1200px
+        margin-bottom: 15px
+        // 课程简介样式
+        .course-introduction
+            float: left
+            width: 71.69%
+            margin-bottom: 50px
+            .introduction
+                color: #333
+                font-size: 18px
+                background: #fff
+                border-radius: 20px
+                padding: 20px
+                margin: 20px 5px 0 5px
+                box-shadow: 0 0 10px #ddd
+                .introduction-title
+                    font-weight: bold
+                    line-height: 24px
+                .introduction-detail
+                    line-height: 30px
+                    margin-top: 10px
+        // 课程章节样式
+        .course-chapter
+            float: left
+            width: 71.69%
+            height: 1400px
+            overflow-y: auto
+            margin-bottom: 50px
+            .chapter-lists
+                overflow: hidden
+                color: #333
+                font-size: 18px
+                background: #fff
+                border-radius: 20px
+                box-shadow: 0 0 10px #ddd
+                padding: 20px
+                margin: 20px 5px 0 5px
+                .chapter-title
+                    font-weight: bold
+                    line-height: 24px
+                    padding: 0 10px 10px 10px
+                .chapter-sections
+                    .chapter-section
+                        height: 50px
+                        line-height: 50px
+                        background: #f2f2f2
+                        border-radius: 30px
+                        padding: 0 10px
+                        margin-top: 1px
+                        position: relative
+                        @include transition
+                        &:hover
+                            background: #ffdcdc
+                        .section-title
+                           cursor: default
+                        .section-look
+                            cursor: pointer
+                            width: 8.81%// 80px
+                            height: 30px
+                            color: #fff
+                            font-size: 12px
+                            text-align: center
+                            line-height: 30px
+                            background: #d90000
+                            border-radius: 20px
+                            border: none
+                            position: absolute
+                            top: 10px
+                            right: 1.03% // 10px
+        .hide
+            display: none
+        .course-lists
+            float: right
+            width: 26.47%
+            margin-top: 20px
+            // margin-bottom: 30px
+            .lists-title
+                color: #333
+                font-size: 20px
+                font-weight: bold
+                line-height: 30px
+                background: url("~images/main-course/course-detail-list-title-bg.png") 0 center no-repeat
+                padding-left: 40px
+            .lists-box
+                .course-list
+                    margin-top: 20px
+                    .list-img
+                        cursor: pointer
+                        float: left
+                        width: 27.78% // 100px
+                        height: 100px
+                    .list-text
+                        height: 100px
+                        font-size: 14px
+                        overflow: hidden
+                        margin-left: 30.56%
+                        .list-title
+                            width: 100%
+                            font-size: 18px
+                            line-height: 24px
+                            overflow: hidden
+                            text-overflow: ellipsis
+                            white-space: nowrap
+                            .title-text
+                                cursor: pointer
+                                color: #333
+                                @include transition
+                                &:hover
+                                    color: #d90000
+                        .list-price
+                            color: #d90000
+                            font-weight: bold
+                            line-height: 19.2px
+                            margin-top: 5px
+                        .list-time
+                            color: #666
+                            line-height: 19.2px
+                        .list-interaction
+                            color: #999
+                            line-height: 19.2px
+                            margin-top: 14px    
+                            .browse
+                                background: url('~images/main-course/course-detail-browse.png') 0 center no-repeat
+                                padding-left: 30px
+                            .download
+                                background: url('~images/main-course/course-content-download.png') 0 center no-repeat
+                                padding-left: 25px
+                                margin-left: 7% // 18px
+                                

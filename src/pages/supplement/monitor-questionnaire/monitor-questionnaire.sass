@@ -1,0 +1,228 @@
+.questionnaire-wrapper
+    background: #ffeede
+    padding: 40px 0
+    .content-box
+        background: #fff
+        box-shadow: 0 0 20px #ccc
+        padding: 20px 6.62%
+        // header 头部样式
+        .header
+            display: flex
+            position: relative
+            .header-left
+                float: left
+                .left-title
+                    color: #333
+                    font-size: 34px
+                    line-height: 43px
+                .left-explanation
+                    color: #666
+                    font-size: 13px
+                    line-height: 18px
+                    background: url("~images/main-monitor/questionnaire-header.png") left center no-repeat
+                    padding-left: 20px
+                    margin: 15px 0
+            .header-right
+                float: right
+                position: absolute
+                right: 0
+                .right-list 
+                    float: left
+                    border-right: 1px solid #ccd2d8
+                    &:last-child
+                        border-right: none
+                    .list-text
+                        cursor: pointer
+                        color: #888
+                        font-size: 13px
+                        padding: 0 8px
+                        &:hover
+                            .iconfont
+                                // color: #d6cf47
+                                color: #ebb111
+                        .iconfont
+                            margin-right: 2px
+                        .collect-icon:before
+                            content: "\e608"
+                        .like-icon:before
+                            content: "\e668"
+                        .share-icon:before
+                            content: "\e637"
+                .share
+                    position: relative
+                    .share-box
+                        display: none
+                        background: #fff
+                        background-clip: content-box
+                        padding-top: 10px
+                        position: absolute
+                        right: 0
+                        &:before, &:after
+                            content: " "
+                            border-bottom: 5px solid #000
+                            border-left: 5px solid transparent
+                            border-right: 5px solid transparent
+                            position: absolute
+                            top: 6px
+                            right: 15px
+                        &:after
+                            border-bottom: 5px solid #fff
+                        .share-lists
+                            width: 164px
+                            height: 39px
+                            border: 1px solid #e0e0e0
+                            border-radius: 2px
+                            .share-list
+                                cursor: pointer
+                                float: left
+                                width: 41px
+                                height: 39px
+                                text-align: center
+                                line-height: 40px
+                                &:hover
+                                    background: #f5f5f5
+                                .iconfont
+                                    font-size: 22px
+                                .qq-space
+                                    color: #f4c031
+                                    &:before
+                                        content: "\e633"
+                                .blog
+                                    color: #f6883e
+                                    &:before
+                                        content: "\e624"
+                                .wechat
+                                    color: #71c267
+                                    &:before
+                                        content: "\e665"
+                                .qq
+                                    color: #7cc5f1
+                                    &:before
+                                        content: "\e600"
+        // table 表格样式
+        .table
+            margin: 25px 0 50px 0
+            table
+                color: #666
+                font-size: 14px
+                border: 1px solid #ddd
+                tr
+                    .table-title
+                        cursor: pointer
+                        width: 100px
+                        text-align: center
+                        line-height: 65px
+                        border-right: 1px solid #ddd
+                        border-bottom: 1px solid #ddd
+                        a
+                            color: #333
+                            font-size: 16px
+                            font-weight: bold
+                            &:hover
+                                text-decoration: underline
+                    .title-detail
+                        line-height: 25px
+                        border-bottom: 1px solid #ddd
+                        padding: 0 5px 0 5px
+        // catalog detail 表格详情样式
+        .table-detail
+            .detail-title
+                display: flex
+                height: 24px
+                overflow: hidden
+                margin: 35px 0 15px 0
+                .title-text
+                    float: left
+                    color: #000
+                    font-size: 22px
+                    line-height: 24px
+                    border-left: 12px solid #ffeede
+                    padding: 0 8px 0 20px
+                .title-line
+                    float: right
+                    width: 89.17%
+                    color: #fff
+                    background: url("~images/main-monitor/questionnaire-table-detail-line.png")
+            .detail-content
+                color: #333
+                font-size: 14px
+                overflow: hidden
+                margin-top: 20px
+                .content-para
+                    line-height: 24px
+                    text-indent: 2em
+                    margin-bottom: 10px
+                .para-title
+                    color: #000
+                    font-size: 17px
+                // 重点问题样式
+                .content-answer
+                    display: flex
+                    justify-content: center
+                    margin-bottom: 10px
+                    .answer-text
+                        float: left
+                        line-height: 24px
+                        margin-right: 135px
+                        // margin-right: 9.93% //135px
+                        &:last-child
+                            margin-right: 0
+                    @media only screen and (max-width: 450px)
+                        .answer-text
+                            float: none
+                            margin-right: 135px
+                // 测试评分样式
+                .content-button
+                    cursor: pointer
+                    display: block
+                    width: 200px
+                    height: 35px
+                    color: #fff
+                    font-size: 15px
+                    font-weight: 700
+                    text-align: center
+                    line-height: 35px
+                    border-radius: 20px
+                    background: linear-gradient(to right, #da0100, #ff6600)
+                    margin: 10px auto 0 auto
+                    @include transition
+                    &:hover
+                        background: linear-gradient(to right, #f80707, #f77621)
+                .content-tip
+                    display: none
+                    color: #d90000
+                    font-size: 18px
+                    font-weight: 700
+                    text-align: center
+                    margin-top: 20px
+                .content-score, .content-enter
+                    font-size: 15px
+                    font-weight: bold
+                    text-align: center
+                .content-score
+                    height: 110px
+                    color: #000
+                    line-height: 110px
+                    background: #ffeede
+                    margin-top: 20px
+                    .number
+                        display: none
+                        color: #d90000
+                        font-size: 35px
+                .content-enter
+                    height: 135px
+                    line-height: 135px
+                    background: #ffe3c8
+                    a
+                        cursor: pointer
+                        color: #333
+                // 专家建议样式
+                .content-image
+                    float: right
+                    clear: right
+                    background: #ffe3c8
+                    margin-left: 10px
+                    transform: rotate(353deg)                   
+    @media only screen  and (max-width: 1360px)
+        .content-box
+            padding: 20px 7px

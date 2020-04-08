@@ -1,0 +1,130 @@
+// dialog对话弹框公共样式
+.dialog-box
+	z-index: 99999
+	width: 450px
+	font-family: "Microsoft Yahei"
+	line-height: 27px // 去除header.vue组件的样式影响
+	border-radius: 15px
+	background: #fff
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.65)
+	transform: translate(-50%, -50%)
+	position: fixed
+	top: 50%
+	left: 50%
+	// 对话弹框头部样式
+	.dialog-header
+		text-align: center
+		line-height: 60px
+		background: $bgColor
+		border-top-left-radius: 15px
+		border-top-right-radius: 15px
+		// 对话弹框删除按钮图片样式
+		.dialog-header-img
+			cursor: pointer
+			position: absolute
+			top: 13px
+			right: 15px
+		// 对话弹框标题样式
+		.dialog-header-title
+			color: #fff
+			font-size: 20px
+	// 对话弹框中心主体form样式
+	.dialog-content
+		padding: 32px 43px
+		.dialog-main 
+			.dialog-list
+				display: flex
+				overflow: hidden
+				margin-bottom: 30px
+				// 对话弹框label字体样式
+				.dialog-label
+					display: block
+					width: 71px
+					font-size: 14px
+					text-align: right
+				// 对话弹框input输入框样式 
+				.dialog-input
+					float: right
+					margin-left: 15px
+					position: relative
+					.dialog-input-img
+						transform: translateY(-50%)
+						position: absolute
+						top: 50%
+						left: 20px
+					.dialog-input-text
+						width: 215px
+						color: #333
+						font-size: 16px
+						font-family: "Microsoft Yahei"
+						border-bottom: 1px solid #999999
+						padding-left: 45px
+						@include transition
+						&:focus
+							border-color: $bgColor
+			// 对话弹框含有提示栏的样式
+			.dialog-tip-list
+				padding-bottom: 20px
+				position: relative
+				.dialog-tip
+					color: #999
+					font-size: 12px
+					position: absolute
+					top: 24px
+					left: 86px
+		// 对话弹框底部按钮样式
+		.dialog-bottom
+			padding-left: 32px
+			.dialog-button
+				cursor: pointer
+				width: 300px
+				height: 40px
+				color: #fff
+				font-size: 18px
+				font-family: "Microsoft Yahei"
+				letter-spacing: 2px
+				background: $bgColor
+				border-radius: 20px
+				margin-top: 10px
+@media only screen and (max-width: 500px)
+	.dialog-box
+		width: 315px
+		.dialog-header
+			line-height: 50px
+			.dialog-header-img
+				width: 30px
+				height: 30px
+				top: 10px
+				right: 10px
+			.dialog-header-title
+				font-size: 18px
+		.dialog-content
+			padding: 5px 8px
+			.dialog-main 
+				.dialog-list
+					margin-bottom: 10px
+					.dialog-label
+						width: 65px
+						font-size: 12px
+					.dialog-input
+						margin-left: 10px
+						.dialog-input-img
+							width: 10px
+							height: 10px
+							left: 5px
+						.dialog-input-text
+							width: 170px
+							font-size: 13px
+							padding-left: 25px
+				.dialog-tip-list
+					padding-bottom: 10px
+					.dialog-tip
+						font-size: 9px
+						top: 18px
+						left: 78px
+			.dialog-bottom
+				padding-left: 69px
+				.dialog-button
+					width: 160px
+					height: 30px
+					font-size: 14px
